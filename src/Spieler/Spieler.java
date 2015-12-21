@@ -1,5 +1,6 @@
+package Spieler;
 import java.util.ArrayList;
-
+import Karte.*;
 
 public class Spieler
 {

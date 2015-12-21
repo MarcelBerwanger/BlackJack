@@ -1,3 +1,4 @@
+package Karte;
 
 
 public class KartenSpiel
@@ -10,9 +11,18 @@ public class KartenSpiel
 			Stapel aktStap = new Stapel();
 			for(int j=0; j<aktStap.getStapelKarten().length; j++)
 			{
-				alleKarten[j+(51*i)]=aktStap.getStapelKarten()[j];
+				alleKarten[j+(52*i)]=aktStap.getStapelKarten()[j];
 			}
 		}
+		
+		//Tests -> es fehlen 6 Karten (6 Könige) [gelöst]
+		//		int index=1;
+		//		for (Karte karte : alleKarten) {
+		//			if(karte.getBezString().equals("K")){
+		//			System.out.println(index+"\t\t"+karte.getBezString() + " " + karte.getFarbe());
+		//			index++;
+		//			}
+		//		}
 	}
 	
 	private Karte[] alleKarten = new Karte[312];

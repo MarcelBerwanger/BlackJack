@@ -1,15 +1,16 @@
+import Spieler.*;
 
 public class Main {
 
 	public static void main(String[] args)
 	{
-		Spieler sp1 = new Spieler("Markus");
-		Spieler sp2 = new Spieler("Max");
-		Spieler sp3 = new Spieler("Manuel");
-		Spieler sp4 = new Spieler("Martin");
-		Spieler sp5 = new Spieler("Marta");
-		Spieler sp6 = new Spieler("Merlin");
-		Spieler sp7 = new Spieler("Mara");
+		new Spieler("Markus");
+		new Spieler("Max");
+		new Spieler("Manuel");
+		new Spieler("Martin");
+		new Spieler("Marta");
+		new Spieler("Merlin");
+		new Spieler("Mara");
 		
 		Bank bank = new Bank();
 		
