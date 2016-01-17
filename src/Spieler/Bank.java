@@ -32,4 +32,26 @@ public class Bank extends Spieler
 			indexStelle--;												// Range vom index verkleinern, damit schon gewählte Zahlen nicht mehr vorkommen können
 		}
 	}
+	/**
+	 * Gleiches Verfahren wie austeilen, nur dass austeilenen Einzeln einen Spieler eine Karte gibt
+	 * 
+	 * @param spieler
+	 */
+	public void austeilenEinzeil(Spieler spieler)
+	{
+		int zufi=0;
+		Karte kartegew=null;											
+		Karte kartevers=null;											
+		
+		zufi = ((int)(Math.random()*indexStelle));					
+		kartegew = kartenPool.getAlleKarten()[zufi];				
+		
+		System.out.println("Spieler: " + spieler.getSpielerName() + " bekommt die " + kartegew.karteAusgeben());
+		
+		kartevers = kartenPool.getAlleKarten()[indexStelle-2];		
+		spieler.addHand(kartegew);									
+		kartenPool.getAlleKarten()[zufi] = kartevers;				
+		kartenPool.getAlleKarten()[(indexStelle-2)] = kartegew;		
+		indexStelle--;												
+	}
 }

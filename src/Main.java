@@ -4,6 +4,8 @@ public class Main {
 
 	public static void main(String[] args)
 	{
+		Bank bank = new Bank();
+		Spieler.setAktBank(bank);
 		new Spieler("Markus");
 		new Spieler("Max");
 		new Spieler("Manuel");
@@ -11,8 +13,6 @@ public class Main {
 		new Spieler("Marta");
 		new Spieler("Merlin");
 		new Spieler("Mara");
-		
-		Bank bank = new Bank();
 		
 		bank.austeilen();
 		bank.austeilen();
