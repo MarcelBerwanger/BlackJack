@@ -12,6 +12,9 @@ public class Spieler
 	
 	public static ArrayList<Spieler> spielerges = new ArrayList<Spieler>();
 	
+	public int anzNeun=0;
+	public int summeHand=0;
+	
 	private static Bank aktBank;
 	public static void setAktBank(Bank b)
 	{
@@ -43,6 +46,7 @@ public class Spieler
 		}
 		System.out.println();
 	}
+	
 	public void zieheNoch()
 	{
 		Spieler sp = this;
